@@ -1,9 +1,9 @@
 class Solution:
     def shuffle(self, nums, n):
-        ans = [0] * (2 * n)
+        result = []
 
         for i in range(n):
-            ans[2 * i] = nums[i]
-            ans[2 * i + 1] = nums[i + n]
+            result.append(nums[i])
+            result.append(nums[i + n])
 
-        return ans
+        return result
